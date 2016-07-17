@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.applegrocer.scheduler.AddClassActivity"
+    android:background="@drawable/chalkbg">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/add_classes_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/green"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.applegrocer.scheduler.ChalkboardTextView
+            android:id="@+id/classNameReq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/classNameReq"
+            android:layout_marginLeft="18dp"
+            android:layout_gravity="left"
+            android:textSize="20sp"
+            />
+
+        <com.applegrocer.scheduler.ChalkboardEditText
+            android:id="@+id/classNameIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nameHint"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+
+        <com.applegrocer.scheduler.ChalkboardTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/classRoom"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="21dp"
+            android:layout_gravity="left"
+            android:textSize="20sp"
+            />
+
+        <com.applegrocer.scheduler.ChalkboardEditText
+            android:id="@+id/classLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/roomHint"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/offWhite"
+            />
+
+        <com.applegrocer.scheduler.ChalkboardTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/classTime"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="18dp"
+            android:layout_gravity="left"
+            android:textSize="20sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.applegrocer.scheduler.ChalkboardCheckboxes
+                android:id="@+id/sunCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="@string/sunday"
+                android:button="@null"
+                android:drawableBottom="?android:attr/listChoiceIndicatorMultiple"
+                android:textSize="18sp"
+                />
+
+            <com.applegrocer.scheduler.ChalkboardCheckboxes
+                android:id="@+id/monCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="@string/monday"
+                android:button="@null"
+                android:drawableBottom="?android:attr/listChoiceIndicatorMultiple"
+                android:textSize="18sp"
+                />
+
+            <com.applegrocer.scheduler.ChalkboardCheckboxes
+                android:id="@+id/tuesCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="@string/tuesday"
+                android:button="@null"
+                android:drawableBottom="?android:attr/listChoiceIndicatorMultiple"
+                android:textSize="18sp"
+                />
+
+            <com.applegrocer.scheduler.ChalkboardCheckboxes
+                android:id="@+id/wedCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="@string/wednesday"
+                android:button="@null"
+                android:drawableBottom="?android:attr/listChoiceIndicatorMultiple"
+                android:textSize="18sp"
+                />
+
+            <com.applegrocer.scheduler.ChalkboardCheckboxes
+                android:id="@+id/thursCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="@string/thursday"
+                android:button="@null"
+                android:drawableBottom="?android:attr/listChoiceIndicatorMultiple"
+                android:textSize="18sp"
+                />
+
+            <com.applegrocer.scheduler.ChalkboardCheckboxes
+                android:id="@+id/friCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="@string/friday"
+                android:button="@null"
+                android:drawableBottom="?android:attr/listChoiceIndicatorMultiple"
+                android:textSize="18sp"
+                />
+
+            <com.applegrocer.scheduler.ChalkboardCheckboxes
+                android:id="@+id/satCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="@string/saturday"
+                android:button="@null"
+                android:drawableBottom="?android:attr/listChoiceIndicatorMultiple"
+                android:textSize="18sp"
+                />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <com.applegrocer.scheduler.ChalkboardTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/classStart"
+                    android:textSize="20sp"
+                    />
+
+                <com.applegrocer.scheduler.ChalkboardTextView
+                    android:id="@+id/startTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/startTime"
+                    android:clickable="true"
+                    style="@android:style/Widget.Holo.Spinner"
+                    android:textSize="18sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <com.applegrocer.scheduler.ChalkboardTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/classEnd"
+                    android:textSize="20sp"
+                    />
+
+                <com.applegrocer.scheduler.ChalkboardTextView
+                    android:id="@+id/endTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/endTime"
+                    android:clickable="true"
+                    style="@android:style/Widget.Holo.Spinner"
+                    android:textSize="18sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/chalkSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog">
+
+        </Spinner>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                />
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

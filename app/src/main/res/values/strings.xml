@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Scheduler</string>
+
+    <!-- Strings for main menu button captions/toolbar option menu-->
+    <string name="planner">Planner</string>
+    <string name="classes">Classes</string>
+    <string name="map">Map</string>
+    <string name="settings">Settings</string>
+
+    <!-- Activity Labels -->
+    <string name="addClass">Add a Class</string>
+    <string name="editClassLabel">Edit Selected Class</string>
+
+
+    <!-- Strings for AddClassActivity-->
+    <string name="classNameReq">Please enter a class name</string>
+    <string name="nameHint">Enter name</string>
+    <string name="classRoom">Please enter the room number</string>
+    <string name="roomHint">Enter room number</string>
+    <string name="classTime">Enter the class time</string>
+    <string name="startTime">6:00 am</string>
+    <string name="classStart">Start time:</string>
+    <string name="endTime">7:00 am</string>
+    <string name="classEnd">End time:</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+
+    <!--Days of the week abrev.-->
+    <string name="sunday">Sun.</string>
+    <string name="monday">Mon.</string>
+    <string name="tuesday">Tues.</string>
+    <string name="wednesday">Wed.</string>
+    <string name="thursday">Thurs.</string>
+    <string name="friday">Fri.</string>
+    <string name="saturday">Sat.</string>
+
+    <!-- Initial time strings for ConfirmationFrag-->
+    <string name="conf">Are you sure?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- Labels for Edit classes text views and buttons-->
+    <string name="classNameLabel">Class Name</string>
+    <string name="classLocationLabel">Location</string>
+    <string name="meetDaysLabel">Meets On</string>
+    <string name="timeLabel">Between</string>
+    <string name="saveChanges">Save Changes</string>
+    <string name="cancelChanges">Cancel Changes</string>
+    <string name="removeClass">Remove Class</string>
+
+</resources>
