@@ -35,3 +35,6 @@ build
 *.ipr
 *~
 /*/proguard-rules.pro
+
+/app/src/androidTest/*
+/app/src/test/*
